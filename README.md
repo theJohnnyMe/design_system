@@ -1,0 +1,1 @@
+Main setup for react based project
