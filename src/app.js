@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.scss";
+import "./css/app.scss";
 
 class App extends React.PureComponent {
   render() {
