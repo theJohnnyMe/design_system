@@ -1,5 +1,10 @@
 :root {
+  // Main colors
   --primary: 0, 132, 223;
+  --secondary: 255, 255, 255;
+
+  --blue-1: 0, 132, 223;
+  --blue-2: 0, 119, 201;
 
   --info: 107, 85, 145;
   --success: 76, 175, 80;
@@ -11,9 +16,27 @@
 
   --grey-50: 255, 255, 255;
   --grey-100: 244, 246, 248;
-  --gray-700: 145, 158, 171;
-  --gray-900: 40, 49, 66;
+  --grey-300: 196, 205, 213;
+  --gray-600: 145, 158, 171;
+  --grey-700: 99, 115, 129;
+  --gray-800: 40, 49, 66;
+  --gray-900: 33, 43, 54;
+
+  // Box shadow
 
   //--box-shadow: 0 1px 10px rgba(145,153,173,.25);
   --box-shadow: 0 1px 10px rgba(var(--gray-700), 0.25);
+
+  // Button background
+  //--btn-primary-bg: linear-gradient(-180deg, rgb(0, 132, 223), rgb(0, 119, 201));
+  --btn-primary-bg: linear-gradient(
+    -180deg,
+    rgba(var(--blue-1), 1),
+    rgba(var(--blue-2), 1)
+  );
+
+  // Button border
+
+  --border-primary: 1px solid rgba(var(--blue-2), 1);
+  --border-secondary: 1px solid rgba(var(--grey-300), 1);
 }
