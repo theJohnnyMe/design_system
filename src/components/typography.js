@@ -21,11 +21,11 @@ const H4Regular = styled.h4`
   font: var(--h4-regular);
 `;
 
-const LabelRegular = styled.label`
+const LabelRegular = styled.p`
   font: var(--label-regular);
 `;
 
-const LabelBold = styled.label`
+const LabelBold = styled.p`
   font: var(--label-bold);
 `;
 
