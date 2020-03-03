@@ -1,12 +1,12 @@
 import React from "react";
 import "./css/app.scss";
-import Input from "./components/input.js";
+import LayoutOne from "./layouts/layout_1.js";
 
 class App extends React.PureComponent {
   render() {
     return (
       <>
-        <Input marginTop value="Hello world" />
+        <LayoutOne />
       </>
     );
   }

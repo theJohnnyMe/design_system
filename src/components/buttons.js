@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Button = styled.button`
   border-radius: 3px;
   font: var(--label-regular);
-  padding: 0 16px;
+  padding: 10px 0;
   width: 100%;
 `;
 
@@ -19,4 +19,4 @@ const SecondaryButton = styled(Button)`
   color: rgba(var(--gray-900), 1);
 `;
 
-export default { PrimaryButton, SecondaryButton };
+export { PrimaryButton, SecondaryButton };

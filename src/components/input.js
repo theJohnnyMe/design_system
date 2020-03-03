@@ -8,15 +8,22 @@ const InputWrapper = styled.div`
 
 const LabelSC = styled.label`
   color: rgba(var(--grey-700), 1);
-  font: var(--label-regular);
+  font: var(--caption);
 `;
 
 const InputSC = styled.input`
   border: var(--border-secondary);
-  color: rgba(var(--grey-700), 1);
+  border-radius: 3px;
+  color: rgba(var(--grey-900), 1);
   font: var(--label-regular);
-  padding: 5px 15px;
+  padding: 10px 15px;
+  outline: none;
   width: 100%;
+  &:disabled {
+    color: rgba(var(--grey-300), 1);
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 `;
 
 const Input = ({
@@ -34,7 +41,7 @@ const Input = ({
       <LabelSC>{labelText}</LabelSC>
       <InputSC
         placeholder={placeholder}
-        disabled
+        disabled={disabled}
         type={type}
         value={value}
         onChange={onChange}
